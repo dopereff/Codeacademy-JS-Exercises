@@ -17,7 +17,7 @@ const getSleepHours = (day) => {
   }
 };
 
-let getActualSleepHours = () => {
+const getActualSleepHours = () => {
   return (
     getSleepHours("monday") +
     getSleepHours("tuesday") +
@@ -29,7 +29,7 @@ let getActualSleepHours = () => {
   );
 };
 
-let getIdealSleepHours = () => {
+const getIdealSleepHours = () => {
   const idealHours = 8;
   return idealHours * 7;
 };
@@ -37,7 +37,7 @@ let getIdealSleepHours = () => {
 function calculateSleepDebt() {
   actualSleepHours = getActualSleepHours();
   idealSleepHours = getIdealSleepHours();
-  let sleepDept = Math.abs(idealSleepHours - actualSleepHours);
+  const sleepDept = Math.abs(idealSleepHours - actualSleepHours);
 
   if (actualSleepHours === idealSleepHours) {
     console.log("Bravo mashina, spal si dostutchno!");

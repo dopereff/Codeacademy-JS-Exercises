@@ -56,6 +56,7 @@ class ShiftCipher {
   }
 
   decrypt(str) {
+    str = str.toUpperCase();
     let decryptedString = "";
 
     for (let i = 0; i < str.length; i++) {
@@ -80,6 +81,6 @@ class ShiftCipher {
   }
 }
 
-const cipher = new ShiftCipher(2);
-console.log(cipher.encrypt("I love to codez!")); // returns 'K NQXG VQ EQFG!'
-console.log(cipher.decrypt("K <3 OA RWRRA")); // returns 'i <3 my puppy'
+const cipher = new ShiftCipher(1);
+console.log(cipher.encrypt("a")); // returns 'K NQXG VQ EQFG!'
+console.log(cipher.decrypt("a")); // returns 'i <3 my puppy'

@@ -81,6 +81,3 @@ class ShiftCipher {
   }
 }
 
-const cipher = new ShiftCipher(1);
-console.log(cipher.encrypt("a")); // returns 'K NQXG VQ EQFG!'
-console.log(cipher.decrypt("a")); // returns 'i <3 my puppy'

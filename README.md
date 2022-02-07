@@ -1,3 +1,3 @@
 # Codeacademy-JS-Exercises
 
-JavaScript exersises from Codeacademy's Front-End Engineer Career Path.
+JavaScript exercises from Codeacademy's Front-End Engineer Career Path.
